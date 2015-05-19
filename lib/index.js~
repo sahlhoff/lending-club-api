@@ -1,0 +1,13 @@
+
+
+
+
+
+
+
+var LendingClub = function(options){
+};
+
+
+
+module.exports = LendingClub;
