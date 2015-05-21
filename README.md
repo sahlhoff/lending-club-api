@@ -6,7 +6,7 @@ How to use it:
 Require lendingClub
 
 ```
-var LendingClub = require('lendingClub');
+var LendingClub = require('lending-api');
 
 var lendingClub = new LendingClub({
 	key: config.key,
