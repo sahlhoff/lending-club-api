@@ -3,7 +3,7 @@ Unofficial Lending Club API
 
 How to use it:
 
-Require lendingClub
+Require lending-api
 
 ```
 var LendingClub = require('lending-api');
