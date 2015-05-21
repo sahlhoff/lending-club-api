@@ -20,7 +20,7 @@ Make a call to the API using a chosen method.
 ```
 lendingClub.loans.list(function(err, data){
 	if(err) return done(err);
-  console.log(data);
+	console.log(data);
 });
 ```
 
