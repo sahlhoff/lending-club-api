@@ -1,0 +1,103 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/zombie/.nvm/versions/node/v4.2.1/bin/node',
+1 verbose cli   '/Users/zombie/.nvm/versions/node/v4.2.1/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@2.14.7
+3 info using node@v4.2.1
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/zombie/code/javascript/lending-club/lending-api',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/zombie/.npm/lending-api/1.0.1/package.tgz not in flight; packing
+9 verbose tar pack [ '/Users/zombie/.npm/lending-api/1.0.1/package.tgz',
+9 verbose tar pack   '/Users/zombie/code/javascript/lending-club/lending-api' ]
+10 verbose tarball /Users/zombie/.npm/lending-api/1.0.1/package.tgz
+11 verbose folder /Users/zombie/code/javascript/lending-club/lending-api
+12 info prepublish lending-api@1.0.1
+13 verbose addLocalTarball adding from inside cache /Users/zombie/.npm/lending-api/1.0.1/package.tgz
+14 silly cache afterAdd lending-api@1.0.1
+15 verbose afterAdd /Users/zombie/.npm/lending-api/1.0.1/package/package.json not in flight; writing
+16 verbose afterAdd /Users/zombie/.npm/lending-api/1.0.1/package/package.json written
+17 silly publish { name: 'lending-api',
+17 silly publish   version: '1.0.1',
+17 silly publish   description: 'Lending club api',
+17 silly publish   main: 'lib/index.js',
+17 silly publish   scripts: { test: 'mocha' },
+17 silly publish   keywords: [ 'lending', 'club', 'node', 'api' ],
+17 silly publish   author: { name: 'chad sahlhoff' },
+17 silly publish   license: 'ISC',
+17 silly publish   dependencies:
+17 silly publish    { log: '1.4.x',
+17 silly publish      request: '2.55.x',
+17 silly publish      util: '0.10.x',
+17 silly publish      should: '6.0.x',
+17 silly publish      debug: '2.2.x' },
+17 silly publish   directories: { test: 'test' },
+17 silly publish   devDependencies: {},
+17 silly publish   repository:
+17 silly publish    { type: 'git',
+17 silly publish      url: 'git+https://github.com/sahlhoff/lending-club-api.git' },
+17 silly publish   bugs: { url: 'https://github.com/sahlhoff/lending-club-api/issues' },
+17 silly publish   homepage: 'https://github.com/sahlhoff/lending-club-api#readme',
+17 silly publish   readme: '# lending-club-api\nUnofficial Lending Club API \n\nHow to use it:\n\nRequire lending-api\n\n```\nvar LendingClub = require(\'lending-api\');\n\nvar lendingClub = new LendingClub({\n\tkey: config.key,\n\tinvestorId: config.investorId\n});\n\n```\n\nMake a call to the API using a chosen method.\n\n```\nlendingClub.loans.list(function(err, data){\n\tif(err) return done(err);\n\tconsole.log(data);\n});\n```\n\nThe following methods have been implemented and work against the Lending Club api.\n\n   - lendingClub.loans.list\n   - lendingClub.account.summary\n   - lendingClub.account.availableCash\n   - lendingClub.account.transfer.add\n   - lendingClub.account.transfer.withdraw\n   - lendingClub.account.pendingTransfers\n   - lendingClub.account.cancelTransfers\n   - lendingClub.account.notesOwned\n   - lendingClub.account.detailedNotesOwned\n   - lendingClub.account.portFoliosOwned\n   - lendingClub.account.createPortfolio\n   - lendingClub.account.submitOrder\n\n\n',
+17 silly publish   readmeFilename: 'README.md',
+17 silly publish   gitHead: '4f3168bf7472473b553aa3a55b4e785384dd2d9d',
+17 silly publish   _id: 'lending-api@1.0.1',
+17 silly publish   _shasum: 'd70b1d9dead3e511767f3dc0e37b0f7cde32b6b0',
+17 silly publish   _from: '.' }
+18 verbose getPublishConfig undefined
+19 silly mapToRegistry name lending-api
+20 silly mapToRegistry using default registry
+21 silly mapToRegistry registry https://registry.npmjs.org/
+22 silly mapToRegistry uri https://registry.npmjs.org/lending-api
+23 verbose publish registryBase https://registry.npmjs.org/
+24 silly publish uploading /Users/zombie/.npm/lending-api/1.0.1/package.tgz
+25 verbose request uri https://registry.npmjs.org/lending-api
+26 verbose request sending authorization for write operation
+27 info attempt registry request try #1 at 11:49:57 AM
+28 verbose request using bearer token for auth
+29 verbose request id 343cf69960162efe
+30 http request PUT https://registry.npmjs.org/lending-api
+31 http 403 https://registry.npmjs.org/lending-api
+32 verbose headers { 'content-type': 'application/json',
+32 verbose headers   'cache-control': 'max-age=300',
+32 verbose headers   'content-length': '95',
+32 verbose headers   'accept-ranges': 'bytes',
+32 verbose headers   date: 'Fri, 01 Apr 2016 02:49:57 GMT',
+32 verbose headers   via: '1.1 varnish',
+32 verbose headers   connection: 'keep-alive',
+32 verbose headers   'x-served-by': 'cache-itm7423-ITM',
+32 verbose headers   'x-cache': 'MISS',
+32 verbose headers   'x-cache-hits': '0',
+32 verbose headers   'x-timer': 'S1459478997.357405,VS0,VE593' }
+33 verbose request invalidating /Users/zombie/.npm/registry.npmjs.org/lending-api on PUT
+34 error publish Failed PUT 403
+35 verbose stack Error: "You cannot publish over the previously published version 1.0.1." : lending-api
+35 verbose stack     at makeError (/Users/zombie/.nvm/versions/node/v4.2.1/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+35 verbose stack     at CachingRegistryClient.<anonymous> (/Users/zombie/.nvm/versions/node/v4.2.1/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+35 verbose stack     at Request._callback (/Users/zombie/.nvm/versions/node/v4.2.1/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+35 verbose stack     at Request.self.callback (/Users/zombie/.nvm/versions/node/v4.2.1/lib/node_modules/npm/node_modules/request/request.js:198:22)
+35 verbose stack     at emitTwo (events.js:87:13)
+35 verbose stack     at Request.emit (events.js:172:7)
+35 verbose stack     at Request.<anonymous> (/Users/zombie/.nvm/versions/node/v4.2.1/lib/node_modules/npm/node_modules/request/request.js:1063:14)
+35 verbose stack     at emitOne (events.js:82:20)
+35 verbose stack     at Request.emit (events.js:169:7)
+35 verbose stack     at IncomingMessage.<anonymous> (/Users/zombie/.nvm/versions/node/v4.2.1/lib/node_modules/npm/node_modules/request/request.js:1009:12)
+36 verbose statusCode 403
+37 verbose pkgid lending-api
+38 verbose cwd /Users/zombie/code/javascript/lending-club/lending-api
+39 error Darwin 15.0.0
+40 error argv "/Users/zombie/.nvm/versions/node/v4.2.1/bin/node" "/Users/zombie/.nvm/versions/node/v4.2.1/bin/npm" "publish"
+41 error node v4.2.1
+42 error npm  v2.14.7
+43 error code E403
+44 error "You cannot publish over the previously published version 1.0.1." : lending-api
+45 error If you need help, you may report this error at:
+45 error     <https://github.com/npm/npm/issues>
+46 verbose exit [ 1, true ]
