@@ -86,7 +86,7 @@ describe('lendingClub.account.detailedNotesOwned', function(){
 		});
 	});
 });
-describe('lendingClub.acount.portfoliosOwned', function(){
+describe('lendingClub.account.portfoliosOwned', function(){
 	it('should return list of portfolios owned', function(done){
 		lendingClub.account.portfoliosOwned(function(err, data){
 			if(err) return done(err);
