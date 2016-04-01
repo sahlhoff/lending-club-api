@@ -1,11 +1,17 @@
 # lending-club-api
 Unofficial Lending Club API 
 
-How to use it:
-
-Require lending-api
+Install:
 
 ```
+npm install lending-api
+```
+
+How to use it:
+
+Require lending-api:
+
+```js
 var LendingClub = require('lending-api');
 
 var lendingClub = new LendingClub({
@@ -17,7 +23,7 @@ var lendingClub = new LendingClub({
 
 Make a call to the API using a chosen method.
 
-```
+```js
 lendingClub.loans.list(function(err, data){
 	if(err) return done(err);
 	console.log(data);
