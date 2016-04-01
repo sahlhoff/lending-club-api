@@ -2,7 +2,7 @@
   "name": "lending-api",
   "version": "1.0.1",
   "description": "Lending club api",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "mocha"
   },
