@@ -20,5 +20,17 @@
     "util": "0.10.x",
     "should": "6.0.x",
     "debug": "2.2.x"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sahlhoff/lending-club-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sahlhoff/lending-club-api/issues"
+  },
+  "homepage": "https://github.com/sahlhoff/lending-club-api#readme"
 }
