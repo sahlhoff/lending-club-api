@@ -1,6 +1,6 @@
 {
   "name": "lending-api",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Lending club api",
   "main": "lib/index.js",
   "scripts": {
